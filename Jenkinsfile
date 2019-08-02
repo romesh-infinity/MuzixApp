@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                sh 'cd Sprint1/muzixservice ; mvn clean package -DskipTests'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'cd Sprint1/muzixservice ; mvn test'
             }
         }
     }
