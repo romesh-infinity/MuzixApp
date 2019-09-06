@@ -9,4 +9,4 @@ Auto trigger enabled using github webhook.
 
 https://jenkins-url/github-webhook/
 
-test
+test git
