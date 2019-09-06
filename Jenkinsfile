@@ -1,7 +1,7 @@
 pipeline {
     agent { docker { image 'maven:latest' } }
-    when { branch 'master' }
     stages {
+        when { branch 'master' }
         stage('build') {
             steps {
 //                sh 'cd Sprint1/muzixservice ; mvn clean package -DskipTests'
