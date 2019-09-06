@@ -1,6 +1,6 @@
 pipeline {
     agent { docker { image 'maven:latest' } }
-    when { branch:'master' }
+    when { branch 'master' }
     stages {
         stage('build') {
             steps {
