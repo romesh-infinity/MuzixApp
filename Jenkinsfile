@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:latest' }
+    agent { docker { image 'maven:latest' } }
     when { branch:'master' }
     stages {
         stage('build') {
